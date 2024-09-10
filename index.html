@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Weather Update</title>
+   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+   <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d252761.16235175633!2d124.20791675917638!3d8.163084866663857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x325579b328c9540d%3A0xe6e208aba2f0d03b!2sIligan%20City%2C%20Lanao%20del%20Norte!5e0!3m2!1sen!2sph!4v1725573585039!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+   <div id="search-container">
+      <input type="text" id="location-input" placeholder="Enter a city..." />
+      <button id="search-btn"><i class="fas fa-search"></i> Search</button>
+      <ul id="suggestions" class="suggestions-list"></ul>
+   </div>
+
+   <h1>WEATHER FORECAST UPDATE</h1>
+
+   <div id="weather-container">
+       <div id="weather">
+           <p>Loading weather data... <i class="fas fa-spinner fa-spin"></i></p>
+       </div>
+   </div>
+
+   <script src="script.js"></script>
+</body>
+</html>
